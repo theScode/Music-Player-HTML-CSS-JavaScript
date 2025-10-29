@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-container">
+
+    <!-- Album Cover -->
+    <div class="img-container">
+      <img src="covers/song1.jpg" alt="Album Art" id="cover">
+    </div>
+
+    <!-- Song Title -->
+    <h2 id="title">Bijuria</h2>
+
+    <!-- Artist Name -->
+    <h3 id="artist">Neha Kakkar</h3>
+
+    <!-- Audio Element -->
+    <audio id="audio" src="songs/song1.mp3"></audio>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev" class="btn">⏮</button>
+      <button id="play" class="btn">▶</button>
+      <button id="next" class="btn">⏭</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+
+
+    <!-- Volume Control -->
+    <div class="volume-control">
+      <label for="volume">🔊</label>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
